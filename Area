@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+void area(int radius){
+    cout<<"Area of the circle:"<<3.14*radius*radius<<endl;
+}
+void  area(int length,int breadth){
+    cout<<"Area of the rectangle:"<<length*breadth<<endl;
+}
+void area(float base ,float height){
+    cout<<"Area of the triangle:"<<0.5*base*height<<endl;
+}
+int main(){
+int radius,length,breadth;
+float base,height;
+cout<<"Enter the radius of the circle:"<<endl;
+cin>>radius;
+area(radius);
+cout<<"Enter the length and breadth of the rectange:"<<endl;
+cin>>length>>breadth;
+area(length,breadth);
+cout<<"Enter the base and height of the triangle:"<<endl;
+cin>>base>>height;
+area(base,height);
+return 0;
+}
